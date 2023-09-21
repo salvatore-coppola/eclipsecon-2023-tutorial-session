@@ -1,0 +1,31 @@
+services:
+  kura:
+    image: kura_eclipsecon2023:5.3.1-alpine-x86_64
+    volumes:
+      - "kura-packages:/opt/eclipse/kura/packages"
+      - "kura-user:/opt/eclipse/kura/user"
+      - "kura-data:/opt/eclipse/kura/data"
+    ports:
+      - 443:443
+  nvidia-triton:
+    image: tritonserver_eclipsecon2023:23.08-tf2-python-py3
+    shm_size: '150m'
+    volumes:
+      - "./triton-models:/models"
+    command: tritonserver --model-repository=/models --model-control-mode=explicit
+    ports:
+      - 4000:8000
+      - 4001:8001
+      - 4002:8002
+  jupyter-notebook:
+    image: tensorflow-notebook_eclipsecon2023:2023-09-11
+    volumes:
+      - "notebook-work:/home/jovyan/work"
+    ports:
+      - 8888:8888
+
+volumes:
+  kura-packages:
+  kura-user:
+  kura-data:
+  notebook-work:

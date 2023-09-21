@@ -1,0 +1,2 @@
+FROM jupyter/tensorflow-notebook:2023-09-11
+COPY ./notebook/ /home/jovyan/work/

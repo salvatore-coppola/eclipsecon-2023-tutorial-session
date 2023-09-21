@@ -1,0 +1,5 @@
+FROM eclipse/kura:5.3.1-alpine-x86_64
+COPY ./bundles/*.dp /opt/eclipse/kura/packages/
+RUN echo "org.eclipse.kura.example.driver.dummysensehat=file\:/opt/eclipse/kura/packages/org.eclipse.kura.example.driver.dummysensehat_1.0.0-SNAPSHOT.dp" >> /opt/eclipse/kura/packages/dpa.properties
+RUN echo "org.eclipse.kura.ai.triton.server=file\:/opt/eclipse/kura/packages/org.eclipse.kura.ai.triton.server-1.2.0.dp" >> /opt/eclipse/kura/packages/dpa.properties
+RUN echo "org.eclipse.kura.wire.ai.component.provider=file\:/opt/eclipse/kura/packages/org.eclipse.kura.wire.ai.component.provider-1.2.0.dp" >> /opt/eclipse/kura/packages/dpa.properties

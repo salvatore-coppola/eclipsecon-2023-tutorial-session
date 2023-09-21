@@ -1,11 +1,1 @@
-# Python virtual env
-.venv
-
-# Jupyter notebooks
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# Tensorflow saved model
-saved_model
-notebook/tf_autoencoder_fp32
-notebook/models/tf_autoencoder_fp32/1/model.savedmodel
+distrib/*
