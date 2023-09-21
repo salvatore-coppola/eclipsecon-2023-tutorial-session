@@ -18,7 +18,7 @@ Run the following command in the working directory from the shell to start up th
 docker compose up
 ```
 
-Take note of the <token-id> printed in the console by the jupyter-notebook container
+Take note of the `token-id` printed in the console by the jupyter-notebook container
 
 Verify that the three docker containers are up and running with the command:
 
@@ -30,9 +30,9 @@ docker ps
 
 - Eclipse Kura&trade;: https://localhost 
   - Credentials: admin/admin
-- Jupyter Nokebook: http://localhost:8888/lab?token=<token-id> 
-  - Credentials: Annotate the <token-id>
+- Jupyter Nokebook: http://localhost:8888/lab?token=`token-id`
+  - Credentials: the `token-id` noted earlier
 - Nvidia&trade; Triton: localhost:4000-4002 (no web fronted)
 - Eclipse Kapua&trade;: https://endpoint-to-be-decided
-  - Credentials: Check on your card
+  - Credentials: Check on card you received
 
