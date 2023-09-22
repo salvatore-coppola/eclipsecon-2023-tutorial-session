@@ -216,7 +216,7 @@ We just need to change two parameter in the configuration:
 
 It is also necessary to change the behaviour of the dummy driver to generate certain anomalies. To do this, the `sense-hat` driver configuration must be changed, enabling the generation of anomalies:
 
-![kura_update_driver_config.png](C:\Users\salvatore.coppola\eclipsecon-2023-tutorial-session\tutorial\imgs\kura_update_driver_config.png)
+![kura_update_driver_config.png](imgs/kura_update_driver_config.png)
 
 The resulting wire graph is the following:
 
