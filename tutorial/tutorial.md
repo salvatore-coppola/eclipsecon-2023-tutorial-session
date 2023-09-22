@@ -193,7 +193,8 @@ In this example we'll call it `TritonRemoteServerService`.
 
 Then we'll need to configure it to run our models. Move to the `TritonServerService` configuration interface and set the following parameters:
 
-- **Nvidia Triton Server address**: use localhost
+- **Nvidia Triton Server address**: use nvidia-triton
+- **Nvidia Triton Server ports**: set the ports 8000,8001,8002
 - **Inference Models**: we'll need to load all the models of the pipeline so: `preprocessor,postprocessor,tf_autoencoder_fp32,ensemble_pipeline`
 
 You can leave everything else as default.
