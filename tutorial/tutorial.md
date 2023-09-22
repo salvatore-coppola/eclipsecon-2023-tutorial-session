@@ -185,6 +185,31 @@ We want to perform anomaly detection in real time, directly within the edge devi
 
 To do so we need to copy the content of the `models` folder from the Jupyter Notebook into `triton-models` folder in your current working directory preserving the directory structure.
 
+```
+triton-models
+├── ensemble_pipeline
+│   ├── 1
+│   └── config.pbtxt
+├── postprocessor
+│   ├── 1
+│   │   └── model.py
+│   └── config.pbtxt
+├── preprocessor
+│   ├── 1
+│   │   └── model.py
+│   └── config.pbtxt
+└── tf_autoencoder_fp32
+    ├── 1
+    │   └── model.savedmodel
+    │       ├── assets
+    │       ├── keras_metadata.pb
+    │       ├── saved_model.pb
+    │       └── variables
+    │           ├── variables.data-00000-of-00001
+    │           └── variables.index
+    └── config.pbtxt
+```
+
 We can now move to the Kura web UI and create a new Triton Server Remote Service component instance. The complete documentation can be found [here](https://eclipse.github.io/kura/docs-release-5.2/core-services/nvidia-triton-server-inference-engine/).
 
 In this example we'll call it `TritonRemoteServerService`.
