@@ -9,7 +9,7 @@ Load the three archives containing the docker containers required for this tutor
 ```shell
 docker load -i kura_eclipsecon2023-5.3.1-alpine-x86_64.tar.gz
 docker load -i tensorflow-notebook_eclipsecon2023-2023-09-11.tar.gz
-docker load -i tritonserver_eclipsecon2023-23.08-tf2-python-py3.tar.gz
+docker load -i tritonserver_eclipsecon2023-22.07-tf2-python-py3.tar.gz
 ```
 
 Run the following command in the working directory from the shell to start up the environment:
