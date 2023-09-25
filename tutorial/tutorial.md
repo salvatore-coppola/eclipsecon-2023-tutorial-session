@@ -238,7 +238,7 @@ We'll call it `Triton` in this example.
 
 We just need to change two parameter in the configuration:
 - **InferenceEngineService Target Filter**: we need to select the `TritonServerRemoteService` we created at the step above
-- **inference.model.name**: Since we're using an ensemble pipeline we need only that as our inference model.
+- **inference.model.name**: Since we're using an ensemble pipeline we need only that as our inference model. Just use `ensemble_pipeline`
 
 It is also necessary to change the behaviour of the dummy driver to generate certain anomalies. To do this, the `sense-hat` driver configuration must be changed, enabling the generation of anomalies:
 
