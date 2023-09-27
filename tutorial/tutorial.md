@@ -45,7 +45,7 @@ The first time you log in you will be asked to change the default password.
 
 ### Cloud connection
 
-After setting up an Eclipse Kura&trade; instance on the Raspberry Pi we'll need to connect it to the [Eclipse Kapua&trade;](https://www.eclipse.org/kapua/) instance created in the local area network.
+After setting up an Eclipse Kura&trade; instance on the Raspberry Pi we'll need to connect it to the [Eclipse Kapua&trade;](https://www.eclipse.org/kapua/) running on the remote instance (check the *Endpoints* section in the `setup.md` file.)
 
 ![image3.png](imgs/img3.png)
 

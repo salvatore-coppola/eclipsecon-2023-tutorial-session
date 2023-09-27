@@ -33,6 +33,9 @@ docker ps
 - Jupyter Nokebook: http://localhost:8888/lab?token=`token-id`
   - Credentials: the `token-id` noted earlier
 - Nvidia&trade; Triton: localhost:4000-4002 (no web fronted)
-- Eclipse Kapua&trade;: https://endpoint-to-be-decided
+- Eclipse Kapua&trade;: https://eclipsecon2023-kapua.dev.everyware.io
+  - account: eclipsecon2023
   - Credentials: Check on card you received
+  - mqtt port: 1883
+  - mqtts port:8883
 
