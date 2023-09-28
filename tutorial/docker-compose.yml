@@ -7,9 +7,11 @@ services:
       - "kura-data:/opt/eclipse/kura/data"
     ports:
       - 443:443
+    depends_on:
+      - nvidia-triton
   nvidia-triton:
     image: tritonserver_eclipsecon2023:22.07-tf2-python-py3
-    shm_size: '250m'
+    shm_size: '1g'
     volumes:
       - "./triton-models:/models"
     command: tritonserver --model-repository=/models --model-control-mode=explicit --backend-config=tensorflow,version=2

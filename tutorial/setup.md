@@ -2,7 +2,7 @@
 
 ## Installation
 
-Copy the contents of the USB stick we provided you with into a working directory on your system.
+Copy the contents of the USB stick (or unpack the archive containing this instruction file) into a working directory of your choice on your system.
 
 Load the three archives containing the docker containers required for this tutorial with the following commands
 
@@ -25,6 +25,10 @@ Verify that the three docker containers are up and running with the command:
 ```shell
 docker ps
 ```
+
+## Running
+
+Access the file `eclipsecon2023-model-building-training.ipynb` in the Jupyter Notebook instace running on your device.
 
 ## Endpoints
 

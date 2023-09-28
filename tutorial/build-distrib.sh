@@ -31,6 +31,10 @@ fi
 
 #create triton models dir
 mkdir ../distrib/triton-models
+mkdir -p ../distrib/triton-models/ensemble_pipeline/1
+mkdir -p ../distrib/triton-models/postprocessor/1
+mkdir -p ../distrib/triton-models/preprocessor/1
+mkdir -p ../distrib/triton-models/tf_autoencoder_fp32/1/model.savedmodel/variables
 
 echo "Copying resources to distrib folder"
 
@@ -39,7 +43,5 @@ mv *.tar.gz ../distrib
 cp docker-compose.yml ../distrib/docker-compose.yml
 
 cp setup.md ../distrib/setup.md
-cp tutorial.md ../distrib/tutorial.md
-cp -R imgs ../distrib
 
 echo "Done."
