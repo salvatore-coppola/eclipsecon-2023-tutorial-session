@@ -34,7 +34,6 @@ mkdir ../distrib/triton-models
 mkdir -p ../distrib/triton-models/ensemble_pipeline/1
 mkdir -p ../distrib/triton-models/postprocessor/1
 mkdir -p ../distrib/triton-models/preprocessor/1
-mkdir -p ../distrib/triton-models/tf_autoencoder_fp32/1/model.savedmodel/variables
 
 echo "Copying resources to distrib folder"
 
