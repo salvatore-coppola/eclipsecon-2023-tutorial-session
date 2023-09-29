@@ -15,15 +15,19 @@ docker load -i tritonserver_eclipsecon2023-22.07-tf2-python-py3.tar.gz
 Run the following command in the working directory from the shell to start up the environment:
 
 ```shell
-docker compose up
+docker compose up -d
 ```
-
-Take note of the `token-id` printed in the console by the jupyter-notebook container
 
 Verify that the three docker containers are up and running with the command:
 
 ```shell
 docker ps
+```
+
+Run and take note of the `token-id` printed in the console by the jupyter-notebook container
+
+```shell
+docker compose logs jupyter-notebook
 ```
 
 ## Running
@@ -41,5 +45,4 @@ Access the file `eclipsecon2023-model-building-training.ipynb` in the Jupyter No
   - account: eclipsecon2023
   - Credentials: Check on card you received
   - mqtt port: 1883
-  - mqtts port:8883
 
