@@ -1,6 +1,7 @@
 services:
   kura:
     image: kura_eclipsecon2023:5.3.1-alpine-x86_64
+    platform: linux/amd64
     volumes:
       - "kura-packages:/opt/eclipse/kura/packages"
       - "kura-user:/opt/eclipse/kura/user"
@@ -11,6 +12,7 @@ services:
       - nvidia-triton
   nvidia-triton:
     image: tritonserver_eclipsecon2023:22.07-tf2-python-py3
+    platform: linux/amd64
     shm_size: '1g'
     volumes:
       - "./triton-models:/models"
@@ -21,6 +23,7 @@ services:
       - 4002:8002
   jupyter-notebook:
     image: tensorflow-notebook_eclipsecon2023:2023-09-11
+    platform: linux/amd64
     volumes:
       - "notebook-work:/home/jovyan/work"
     ports:
