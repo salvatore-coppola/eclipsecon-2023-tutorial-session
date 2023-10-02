@@ -15,7 +15,7 @@ echo "Creating tensorflow-notebook"
 docker save tensorflow-notebook_eclipsecon2023:2023-09-11 | gzip > tensorflow-notebook_eclipsecon2023-2023-09-11.tar.gz
 echo "Created tensorflow-notebook"
 echo "Creating tritonserver"
-docker save tritonserver_eclipsecon2023:22.07:tf2-python-py3 | gzip > tritonserver_eclipsecon2023-22.07-tf2-python-py3.tar.gz
+docker save tritonserver_eclipsecon2023:22.07-tf2-python-py3 | gzip > tritonserver_eclipsecon2023-22.07-tf2-python-py3.tar.gz
 echo "Created tritonserver"
 echo "Creating kura"
 docker save kura_eclipsecon2023:5.3.1-alpine-x86_64 | gzip > kura_eclipsecon2023-5.3.1-alpine-x86_64.tar.gz
