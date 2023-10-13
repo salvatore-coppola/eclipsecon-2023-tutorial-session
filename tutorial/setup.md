@@ -1,4 +1,4 @@
-# Eclipsecon 2023 Talk tutorial: Addressing Edge AI Challenges to scale. Anomaly detection/inference made simple with Eclipse Kura & Kapua.
+# Eclipsecon 2023 Talk tutorial: Addressing Edge AI Challenges to Scale. Anomaly detection/inference made simple with Eclipse Kura & Kapua.
 
 ## Installation
 
@@ -32,17 +32,17 @@ docker compose logs jupyter-notebook
 
 ## Running
 
-Access the file `eclipsecon2023-model-building-training.ipynb` in the Jupyter Notebook instace running on your device.
+Access the file `eclipsecon2023-model-building-training.ipynb` in the Jupyter Notebook instance running on your device.
 
 ## Endpoints
 
 - Eclipse Kura&trade;: https://localhost 
   - Credentials: admin/admin
-- Jupyter Nokebook: http://localhost:8888/lab?token=`token-id`
+- Jupyter Notebook: http://localhost:8888/lab?token=`token-id`
   - Credentials: the `token-id` noted earlier
 - Nvidia&trade; Triton: localhost:4000-4002 (no web fronted)
 - Eclipse Kapua&trade;: https://eclipsecon2023-kapua.dev.everyware.io
-  - account: eclipsecon2023
+  - Account: eclipsecon2023
   - Credentials: Check on card you received
-  - mqtt port: 1883
+  - MQTT port: 1883
 
