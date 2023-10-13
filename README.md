@@ -8,7 +8,7 @@ In this laboratory we're going to learn how to overcome these challenges leverag
 
 This laboratory will give attendees a hands-on experience of the entire lifecycle of an Edge AI application, from data collection to training to model deployment.
 
-We're going to build an anomaly detection model for a field appliance in **Tensorflow Keras** and learn what are the required steps to make it available through Nvidia Triton Inference Server, optimize it for improved inference times and deploying it on the edge using Nvidia devices for GPU-accelerated inference.
+We're going to build an anomaly detection model for a field appliance in **Tensorflow Keras** and learn what are the required steps to make it available through Nvidia Triton Inference Server, optimize it for improved inference times and deploy it on the edge using Nvidia devices for GPU-accelerated inference.
 
 During the tutorial we'll focus on the process of creating a deep learning anomaly detector from scratch, leveraging the entire Eclipse ecosystem:
 
@@ -27,7 +27,7 @@ Attendees will be asked to:
 
 1. Use a Laptop Computer running Linux, MacOS or Windows, with a container engine installed1 (e.g. Docker or Podman).
 2. Download some docker containers following the instructions provided afterwards.
-3. Connect to a Wifi Network created by the Eclipse Kura team where an Eclipse Kapua instance will be running.
+3. Connect to a Wi-Fi network created by the Eclipse Kura team where an Eclipse Kapua instance will be running.
 
 ## Running of the session
 
@@ -39,9 +39,9 @@ The session will be divided in three sections:
 
 ### Attendee Setup
 
-The attendee will connect to the wifi created by Kura Team and receive a usb stick containing the session material (but not required for the session) and credentials to access Kapua.
+The attendee will connect to the wifi created by Kura Team and receive a USB stick containing the session material (but not required for the session) and credentials to access Kapua.
 
-The attendee will download, from the provided endopoint of a local Docker Container Registry the following images:
+The attendee will download, from the provided endpoint of a local Docker Container Registry the following images:
 
 - Latest Eclipse Kura images for x86
 - Nvidia Triton Server for x86
@@ -59,9 +59,9 @@ The attendee will download, from the provided endopoint of a local Docker Contai
 
 ### 1. Data Collection
 
-We want user to collect data from a simulated device with different sensors. In order to do that we will create a DummySenseHAT bundle producing fake sensors data in the same way the real Raspberry SenseHAT does. The user will create a simple wire graph in order to upload data to their Eclipse Kapua account
+We want user to collect data from a simulated device with different sensors. In order to do that we will create a DummySenseHAT bundle producing fake sensor data in the same way the real Raspberry SenseHAT does. The user will create a simple wire graph in order to upload data to their Eclipse Kapua account
 
-This process will show how easy is uploading data to Eclipse Kapua but they will not be used for the training.
+This process will show how easy is to upload data to Eclipse Kapua but they will not be used for the training.
 
 However those data will be not used for training but a csv file containing the data already prepared, will be supplied to the attendee.
 
@@ -79,7 +79,7 @@ The instructions will be extracted from Mattia's previous talk2
 
 The user will configure Eclipse Kura docker image. He will connect the Kura instance with the Nvidia Triton instance through the `TritonServerRemoteService`
 
-The user will create a Wire Graph able to get data to examinate from the Dummy Driver and test test them into the Ai Wire Component configured with the model trainend in the previous phase, in order to detect an anomaly.
+The user will create a Wire Graph able to get data to examine from the Dummy Driver and test them into the Ai Wire Component configured with the model trained in the previous phase, in order to detect an anomaly.
 
 The SenseHAT dummy is a driver that generates data compatible with that of the SenseHAT Raspberry occasionally generating anomalies.
 
